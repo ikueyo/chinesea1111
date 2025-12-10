@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const maxAllowed = 2;
 
     // 您部署的 Google Apps Script Web App URL
-    const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/a/macros/zyi.kh.edu.tw/s/AKfycbxcKDuQrn1sE5fprRSWy-AX8-jY5vbslEE88oMq3qyHRya-S6Ir94J6h_ajazBRMePu/exec';
+    const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwwQv7CGFutHMs9u715qA0TjmoKi-Ab_xqm8x3dSaLXMuhKjLDnJ2EbapViqsnAXMQL/exec';
 
     // 限制使用者最多只能選擇兩個競賽項目
     checkboxes.forEach(checkbox => {
