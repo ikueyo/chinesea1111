@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國小校內語文競賽</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>第一屆國小校內語文競賽</h1>
+        <p>展現你的語言才華，在這裡發光發熱！</p>
+    </header>
+
+    <nav>
+        <a href="#about">活動簡介</a>
+        <a href="#categories">競賽項目</a>
+        <a href="#rules">競賽規則</a>
+        <a href="#schedule">活動時程</a>
+        <a href="#register">線上報名</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>活動簡介</h2>
+            <p>為了提升本校學生的語文能力，激發學習興趣，並選拔優秀選手參加校外比賽，特舉辦本次校內語文競賽。歡迎所有對語文有熱情的同學踴躍報名！</p>
+            <ul>
+                <li><strong>日期：</strong> 2025年12月20日</li>
+                <li><strong>時間：</strong> 上午 8:00 - 下午 4:00</li>
+                <li><strong>地點：</strong> 本校活動中心三樓</li>
+            </ul>
+        </section>
+
+        <section id="categories">
+            <h2>競賽項目</h2>
+            <div class="category-cards">
+                <div class="card">
+                    <h3>朗讀比賽</h3>
+                    <p>展現你的聲音表情與文字感受力。</p>
+                </div>
+                <div class="card">
+                    <h3>演說比賽</h3>
+                    <p>分享你的觀點，用言語打動人心。</p>
+                </div>
+                <div class="card">
+                    <h3>作文比賽</h3>
+                    <p>用文字編織故事，揮灑你的想像力。</p>
+                </div>
+                <div class="card">
+                    <h3>硬筆書法</h3>
+                    <p>一筆一畫，寫出漢字的結構與美感。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rules">
+            <h2>競賽規則</h2>
+            <ol>
+                <li>所有參賽者必須為本校在學學生。</li>
+                <li>每位學生最多可報名兩個競賽項目。</li>
+                <li>請於比賽開始前15分鐘到場報到。</li>
+                <li>比賽結果將於當日下午5點公佈於學校網站。</li>
+            </ol>
+        </section>
+
+        <section id="schedule">
+            <h2>活動時程</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>時間</th>
+                        <th>活動內容</th>
+                        <th>地點</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00 - 08:30</td>
+                        <td>選手報到</td>
+                        <td>活動中心入口</td>
+                    </tr>
+                    <tr>
+                        <td>09:00 - 11:00</td>
+                        <td>朗讀、演說比賽</td>
+                        <td>三樓演講廳</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 13:00</td>
+                        <td>作文、硬筆書法比賽</td>
+                        <td>四樓美術教室</td>
+                    </tr>
+                    <tr>
+                        <td>13:00 - 14:00</td>
+                        <td>午餐休息</td>
+                        <td>-</td>
+                    </tr>
+                     <tr>
+                        <td>14:00 - 16:00</td>
+                        <td>評審評分</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>16:30</td>
+                        <td>頒獎典禮</td>
+                        <td>三樓演講廳</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>線上報名</h2>
+            <form id="registrationForm">
+                <label for="studentName">姓名：</label>
+                <input type="text" id="studentName" name="studentName" required>
+
+                <label for="studentId">學號：</label>
+                <input type="text" id="studentId" name="studentId" required>
+
+                <label for="grade">年級：</label>
+                <select id="grade" name="grade" required>
+                    <option value="">請選擇年級</option>
+                    <option value="1">一年級</option>
+                    <option value="2">二年級</option>
+                    <option value="3">三年級</option>
+                    <option value="4">四年級</option>
+                    <option value="5">五年級</option>
+                    <option value="6">六年級</option>
+                </select>
+
+                <label>報名項目 (最多選兩項):</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="reading" name="category" value="reading">
+                    <label for="reading">朗讀比賽</label><br>
+                    <input type="checkbox" id="speech" name="category" value="speech">
+                    <label for="speech">演說比賽</label><br>
+                    <input type="checkbox" id="writing" name="category" value="writing">
+                    <label for="writing">作文比賽</label><br>
+                    <input type="checkbox" id="calligraphy" name="category" value="calligraphy">
+                    <label for="calligraphy">硬筆書法</label><br>
+                </div>
+
+                <button type="submit">提交報名</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>主辦單位：教務處 | 聯絡電話：(02) 1234-5678</p>
+        <p>&copy; 2025 國小語文競賽. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
