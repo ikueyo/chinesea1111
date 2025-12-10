@@ -114,19 +114,8 @@
                 <label for="studentName">姓名：</label>
                 <input type="text" id="studentName" name="studentName" required>
 
-                <label for="studentId">學號：</label>
-                <input type="text" id="studentId" name="studentId" required>
-
-                <label for="grade">年級：</label>
-                <select id="grade" name="grade" required>
-                    <option value="">請選擇年級</option>
-                    <option value="1">一年級</option>
-                    <option value="2">二年級</option>
-                    <option value="3">三年級</option>
-                    <option value="4">四年級</option>
-                    <option value="5">五年級</option>
-                    <option value="6">六年級</option>
-                </select>
+                <label for="class">班級：</label>
+                <input type="text" id="class" name="class" placeholder="例如：三年二班" required>
 
                 <label>報名項目 (最多選兩項):</label>
                 <div class="checkbox-group">
@@ -139,6 +128,9 @@
                     <input type="checkbox" id="calligraphy" name="category" value="calligraphy">
                     <label for="calligraphy">硬筆書法</label><br>
                 </div>
+
+                <!-- Honeypot field for bot detection -->
+                <input type="text" name="website" id="website" style="display:none;" tabindex="-1" autocomplete="off">
 
                 <button type="submit">提交報名</button>
             </form>
