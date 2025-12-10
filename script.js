@@ -43,9 +43,15 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('報名資料提交中，請稍候...');
 
         try {
+            // 將 FormData 轉換為 URL 編碼的字串
+            const urlEncodedData = new URLSearchParams(formData).toString();
+
             const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
                 method: 'POST',
-                body: formData
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: urlEncodedData
             });
 
             const result = await response.json();
